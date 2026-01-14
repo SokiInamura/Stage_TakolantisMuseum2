@@ -1,8 +1,8 @@
-ファイル名
 
-・00_Precambrian					(先カンブリア紀)			上村
-・01_Cambrian-Ordovician_Period		(オルドビス・カンブリア紀)	小野寺
-・02_Silurian-Devonian_Period		(デボン・シルル紀)			須藤
-・03_Carboniferous-Permian_Period	(ペルム・石炭紀)			中澤
-・04_MesozoicEra					(中生代)					稲村
-・05_CenozoicEra					(新生代)					井上
+・ファイル名
+	00_Precambrian					(先カンブリア紀)			上村
+	01_Cambrian-Ordovician_Period	(オルドビス・カンブリア紀)	小野寺
+	02_Silurian-Devonian_Period		(デボン・シルル紀)			須藤
+	03_Carboniferous-Permian_Period	(ペルム・石炭紀)			中澤
+	04_MesozoicEra					(中生代)					稲村
+	05_CenozoicEra					(新生代)					井上

@@ -9,17 +9,17 @@ SCRIPT			# この行は絶対消さないこと！
 #------------------------------------------------------------------------------
 # テクスチャ数
 #------------------------------------------------------------------------------
-NUM_TEXTURE = 6
+NUM_TEXTURE = 2
 
 #------------------------------------------------------------------------------
 # テクスチャファイル名
 #------------------------------------------------------------------------------
-TEXTURE_FILENAME = data/TEXTURE/sky000.jpg			# [0]空テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/mountain000.png		# [1]山テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/field000.jpg		# [2]地面テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/wall100.jpg			# [3]壁テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/tree000.png			# [4]木テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/grass000.png		# [5]草テクスチャ
+
+# 空
+TEXTURE_FILENAME = data/TEXTURE/sky000.jpg				# [0]空テクスチャ
+
+# 配置物
+TEXTURE_FILENAME = data/TEXTURE/tex_helpwindow.png		# [1]説明ウィンドウテクスチャ
 
 #------------------------------------------------------------------------------
 # モデル数
@@ -29,7 +29,10 @@ NUM_MODEL = 1
 #------------------------------------------------------------------------------
 # モデルファイル名
 #------------------------------------------------------------------------------
-MODEL_FILENAME = data/MODEL/wall500.x		# [0]壁
+
+# ステージ
+MODEL_FILENAME = data/MODEL/XX_StageModel/20260127_tako_stage_model.x	# [0]ステージ
+MODEL_FILENAME = data/MODEL/XX_StageModel/20260127_tako_stage_sign.x	# [1]ステージの目印
 
 #------------------------------------------------------------------------------
 # カメラ情報
@@ -68,156 +71,47 @@ END_SKYSET
 #------------------------------------------------------------------------------
 # 山情報
 #------------------------------------------------------------------------------
-MOUNTAINSET
-	TEXTYPE = 1
-END_MOUNTAINSET
 
 #------------------------------------------------------------------------------
 # 地面情報
 #------------------------------------------------------------------------------
-FIELDSET
-	TEXTYPE = 2
-	POS = 0 0 0
-	ROT = 0 0 0
-	BLOCK = 16 16
-	SIZE = 80 80
-END_FIELDSET
-
-FIELDSET
-	TEXTYPE = 2
-	POS = -1280 -80 0
-	ROT = 0 0 0
-	BLOCK = 16 16
-	SIZE = 80 80
-END_FIELDSET
-
-FIELDSET
-	TEXTYPE = 2
-	POS = 0 80 0
-	ROT = 0 45 0
-	BLOCK = 4 4
-	SIZE = 80 80
-END_FIELDSET
+#FIELDSET
+#	TEXTYPE = 2
+#	POS = 0 0 0
+#	ROT = 0 0 0
+#	BLOCK = 16 16
+#	SIZE = 80 80
+#END_FIELDSET
 
 #------------------------------------------------------------------------------
-# 壁情報
+# 壁(説明ウィンドウ)情報
 #------------------------------------------------------------------------------
 WALLSET
-	TEXTYPE = 3
-	POS = 0 -80 640
-	ROT = 0 180 0
-	BLOCK = 16 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = 640 -80 0
-	ROT = 0 270 0
-	BLOCK = 16 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = 0 -80 -640
+	TEXTYPE = 1
+	POS = 0 50 0
 	ROT = 0 0 0
-	BLOCK = 16 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = -640 -80 0
-	ROT = 0 90 0
-	BLOCK = 16 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = -1280 -160 640
-	ROT = 0 180 0
-	BLOCK = 16 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = -1920 -160 0
-	ROT = 0 90 0
-	BLOCK = 16 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = -1280 -160 -640
-	ROT = 0 0 0
-	BLOCK = 16 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = -113.137 0 113.137
-	ROT = 0 135 0
-	BLOCK = 4 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = 113 0 113.137
-	ROT = 0 225 0
-	BLOCK = 4 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = 113.137 0 -113.137
-	ROT = 0 315 0
-	BLOCK = 4 1
-	SIZE = 80 80
-END_WALLSET
-
-WALLSET
-	TEXTYPE = 3
-	POS = -113.137 0 -113.137
-	ROT = 0 45 0
-	BLOCK = 4 1
-	SIZE = 80 80
+	BLOCK = 1 1
+	SIZE = 170 100
 END_WALLSET
 
 #------------------------------------------------------------------------------
 # モデル配置情報
 #------------------------------------------------------------------------------
-MODELSET
+
+#------------------------
+# ステージ
+#------------------------
+MODELSET			# ステージモデル
 	TYPE = 0
-	POS = 300 0 300
-	ROT = 0 45 0
+	POS = 0 0 0
+	ROT = 0 0 0
 	SHADOW = 0
 END_MODELSET
 
-MODELSET
-	TYPE = 0
-	POS = 300 0 -300
-	ROT = 0 315 0
-	SHADOW = 0
-END_MODELSET
-
-MODELSET
-	TYPE = 0
-	POS = -300 0 -300
-	ROT = 0 225 0
-	SHADOW = 0
-END_MODELSET
-
-MODELSET
-	TYPE = 0
-	POS = -300 0 300
-	ROT = 0 135 0
+MODELSET			# ステージ目印
+	TYPE = 1
+	POS = 0 0 0
+	ROT = 0 0 0
 	SHADOW = 0
 END_MODELSET
 
@@ -228,13 +122,13 @@ END_MODELSET
 #------------------------------------------------------------------------------
 # 草配置情報
 #------------------------------------------------------------------------------
-GRASSSET
-TEXTYPE = 5
-POS = 0 0 400
-RANGE = 160 160
-NUM = 200
-SIZE = 20 100
-END_GRASSSET
+#GRASSSET
+#TEXTYPE = 5
+#POS = 0 0 400
+#RANGE = 160 160
+#NUM = 200
+#SIZE = 20 100
+#END_GRASSSET
 
 #------------------------------------------------------------------------------
 # プレイヤー情報

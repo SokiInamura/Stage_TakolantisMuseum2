@@ -1593,7 +1593,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "C:\\Users\\student\\TEXTURE\\wood000.jpg";
+    "dataa\\TEXTURE\\wood001.jpg";
    }
   }
  }
